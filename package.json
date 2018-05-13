@@ -1,0 +1,37 @@
+{
+  "name": "@homebots/http",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/http.js",
+  "scripts": {
+    "test": "echo 1",
+    "build": "npm run clean && tsc -p .",
+    "dev": "npm run clean && tsc -p . -w",
+    "dev:server": "nodemon -w dist/",
+    "start": "node dist/index.js",
+    "clean": "rm -rf ./dist/",
+    "lint": "tslint -p ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Home Bots",
+    "email": "homebots.inc@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:homebots/alfred.git"
+  },
+  "devDependencies": {
+    "@homebots/tslint": "^1.0.0",
+    "@types/node": "^10.0.8",
+    "tslib": "^1.9.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@dot-build/logger": "^1.0.2"
+  }
+}
